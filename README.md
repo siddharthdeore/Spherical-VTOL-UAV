@@ -3,7 +3,7 @@ Single   Rotor   Vertical   Take-off   and   Landing   system   is   selected   
 <br><b>KEYWORDS:</b>UAV, flight computer, Ground station, single rotor, VTOL
 <br />
 <b>Free Body Diagram</b>
-<img src = "/Images/finalmodel.jpg" />
+<img src = "/Images/FBD.jpg" />
 <br />
 <b>Final Working Model</b>
 <img src = "/Images/finalmodel.jpg" />
