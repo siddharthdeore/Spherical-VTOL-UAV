@@ -151,23 +151,23 @@ void loop()
 
   I += P;
   D = P - p_P;
-  PID = P * 85 + I * 0 * dt + 10 * D / dt;
+  PID = P * 85 + I * 0.021 * dt + 10 * D / dt;
   p_P = P;
 
 
   D_roll = roll - p_roll;
   I_roll += roll;
-  PIDroll = 30 * roll + rki * I_roll + 0 * D_roll / dt;
+  PIDroll = 30 * roll + rki * I_roll + 0.21 * D_roll / dt;
   p_roll = roll;
 
   D_pitch = pitch - p_pitch;
   I_pitch += pitch;
-  PIDpitch = 30 * pitch + pki * I_pitch + 0 * D_pitch / dt;
+  PIDpitch = 30 * pitch + pki * I_pitch + 0.2 * D_pitch / dt;
   p_pitch = pitch;
 
   D_yaw = yaw - p_yaw;
   I_yaw += yaw;
-  PIDyaw = 0 * yaw + 0 * I_yaw + 0 * D_yaw / dt;
+  PIDyaw = 0 * yaw + 0.02 * I_yaw + 0.01 * D_yaw / dt;
   p_yaw = yaw;
 
   PIDyaw = PIDyaw > 200 ? 200 : PIDyaw;
